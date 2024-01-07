@@ -1,0 +1,32 @@
+.app__footer {
+  background-color: rgba(255, 255, 255, 0.99);
+  position: fixed;
+  z-index: 2;
+  border-width: 2.5px 2.5px 0px 0px;
+  border-style: solid;
+  border-image: linear-gradient(
+    45deg,
+    rgba(2, 2, 2, 0.99),
+    rgba(2, 2, 2, 0.6),
+    rgba(2, 2, 2, 0.45),
+    rgba(2, 2, 2, 0.15),
+    rgba(2, 2, 2, 0) 98%
+  );
+  border-image-slice: 1;
+  box-shadow: 20px 30px 10px 1px rgba(10, 70, 10, 0.075);
+  @apply fixed bottom-0 flex w-full;
+}
+.app__footer-link_lists {
+  @apply flex content-around;
+}
+.app__footer-list {
+  list-style: none;
+  padding: 0;
+  @apply mx-7;
+}
+.app__footer-list label {
+  @apply block my-5;
+}
+.app__footer-list-item {
+  @apply mb-2;
+}

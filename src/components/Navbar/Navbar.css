@@ -1,0 +1,39 @@
+.app__nav {
+  background-color: rgba(255, 255, 255, 0.99);
+  position: fixed;
+  z-index: 2;
+  border-width: 0px 0px 2.5px 2.5px;
+  border-style: solid;
+  border-image: linear-gradient(
+    45deg,
+    rgba(2, 2, 2, 0.99),
+    rgba(2, 2, 2, 0.6),
+    rgba(2, 2, 2, 0.45),
+    rgba(2, 2, 2, 0.15),
+    rgba(2, 2, 2, 0) 98%
+  );
+  border-image-slice: 1;
+  box-shadow: -10px 10px 10px 1px rgba(10, 70, 10, 0.075);
+  @apply fixed flex justify-between pt-[1rem] w-11/12  h-[90px] left-7 px-5;
+}
+
+.app__nav-logo {
+}
+
+.app__nav-link_list {
+  @apply flex;
+}
+
+.app__nav-link_listItem {
+  transition: all 0.2s ease-in;
+  font-weight: 500;
+  @apply mx-5;
+}
+
+.app__nav-link_listItem:hover {
+  padding: 7px 10px;
+  background-color: rgba(73, 241, 171, 0.65);
+  transform: scale(1.05);
+  font-weight: 500;
+  font-style: italic;
+}
