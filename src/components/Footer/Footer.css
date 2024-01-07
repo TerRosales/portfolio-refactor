@@ -14,7 +14,7 @@
   );
   border-image-slice: 1;
   box-shadow: 20px 30px 10px 1px rgba(10, 70, 10, 0.075);
-  @apply fixed bottom-0 flex w-full;
+  @apply fixed bottom-0 flex w-full h-[150px];
 }
 .app__footer-link_lists {
   @apply flex content-around;
@@ -25,8 +25,8 @@
   @apply mx-7;
 }
 .app__footer-list label {
-  @apply block my-5;
+  @apply block my-1;
 }
 .app__footer-list-item {
-  @apply mb-2;
+  @apply mb-1;
 }
