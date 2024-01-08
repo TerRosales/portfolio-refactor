@@ -2,6 +2,10 @@
   @apply container flex w-full py-[10%];
 }
 
+.app__about-trAI {
+  @apply w-[350px]
+}
+
 .app__about-selfIntro {
   @apply pl-5 w-1/2  sm:w-full;
 }

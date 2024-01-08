@@ -9,7 +9,9 @@ const About = () => {
   return (
     <section id="about" className="app__about">
       <section className="app__about-selfIntro">
-        <img src={images.trAI} alt="ai-logo" />
+        <img
+          className="app__about-trAI"
+          src={images.trAI} alt="ai-logo" />
         <h2 className="app__about-selfIntro_name">Terrence Rosales</h2>
         <h1 className="app__about-selfIntro_titles">
           Frontend | <span className="text-red">UI / UX</span> | Software
