@@ -1,0 +1,259 @@
+.app__about {
+  @apply container flex w-full py-[10%];
+}
+
+.app__about-selfIntro {
+  @apply pl-5 w-1/2  sm:w-full;
+}
+
+.app__about-selfIntro_name {
+}
+
+.app__about-selfIntro_titles {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: rgba(73, 241, 171, 0.9);
+  text-shadow: -10px 5px 12px rgba(73, 252, 170, 0.25);
+  animation: text-pop;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.app__about-selfIntro_stmt {
+  border-width: 0px 0px 2.5px 2.5px;
+  border-style: solid;
+  border-image: linear-gradient(
+    45deg,
+    rgba(2, 2, 2, 0.99),
+    rgba(2, 2, 2, 0.6),
+    rgba(2, 2, 2, 0.45),
+    rgba(2, 2, 2, 0.15),
+    rgba(2, 2, 2, 0) 98%
+  );
+  border-image-slice: 1;
+  box-shadow: -10px 10px 10px 1px rgba(10, 100, 10, 0.075);
+  padding: 0.2rem 0.2rem;
+  @apply text-[18px];
+}
+
+/* End Of Intro */
+
+/* Start Of Animated Sections */
+
+.app__about-skillsAnimations {
+  @apply flex-col;
+}
+/* Flipping Texts */
+.app__about-animationWordFlip {
+}
+.app__animator-wrapper {
+  display: flex;
+  height: 2.2rem;
+  width: 80%;
+  text-align: center;
+  justify-content: center;
+  overflow-y: hidden;
+  margin: 4.5rem 3rem 4.5rem 3rem;
+  box-shadow: -10px 10px 10px 1px rgba(10, 100, 10, 0.075);
+  width: 24rem;
+  border-width: 0px 2.5px 2.5px 2.5px;
+  border-style: solid;
+  border-image: linear-gradient(
+    45deg,
+    rgba(2, 2, 2, 0.99),
+    rgba(2, 2, 2, 0.6),
+    rgba(2, 2, 2, 0.45),
+    rgba(2, 2, 2, 0.15),
+    rgba(2, 2, 2, 0) 98%
+  );
+  border-image-slice: 1;
+  @apply flex h-[3rem] w-full;
+}
+
+.app__animator-thirdWord,
+.app__animator-firstWord {
+  z-index: 1;
+  font-size: 1.65rem;
+  display: block;
+  width: 9.4rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.app__animator-firstWord {
+  z-index: 1;
+  animation: text-scroll-up;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  transform: translateY(-500%);
+  font-weight: 600;
+}
+
+.app__animator-thirdWord {
+  z-index: 1;
+  animation: text-scroll-up-2;
+  animation-duration: 5.12s;
+  animation-fill-mode: both;
+  transform: translateY(-500%);
+  font-weight: 600;
+}
+
+.app__animator-secondWord {
+  font-size: 1.55rem;
+  z-index: 1;
+  display: block;
+  width: 5rem;
+  transition: all 0.5s ease-in-out;
+  animation: text-scroll-down;
+  animation-duration: 4.5s;
+  animation-fill-mode: both;
+  transform: translateY(400%);
+}
+.app__about-animationWordSlide {
+}
+
+@media screen and (max-width: 400px) {
+  .app__about {
+    flex-direction: column !important;
+  }
+}
+
+@keyframes text-pop {
+  0% {
+    text-shadow: 0 0 rgba(10, 10, 10, 0.32), 0 0 rgba(10, 10, 10, 0.32),
+      0 0 rgba(10, 10, 10, 0.32), 0 0 rgba(10, 10, 10, 0.32),
+      0 0 rgba(10, 10, 10, 0.32), 0 0 rgba(10, 10, 10, 0.32),
+      0 0 rgba(10, 10, 10, 0.32), 0 0 rgba(10, 10, 10, 0.32);
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    text-shadow: -1px 1px rgba(10, 10, 10, 0.32),
+      -2px 2px rgba(10, 10, 10, 0.32), -3px 3px rgba(10, 10, 10, 0.32),
+      -4px 4px rgba(10, 10, 10, 0.32), -5px 5px rgba(10, 10, 10, 0.32),
+      -6px 6px rgba(10, 10, 10, 0.32), -7px 7px rgba(10, 10, 10, 0.32),
+      -8px 8px rgba(10, 10, 10, 0.32);
+    transform: translateX(8px) translateY(-8px);
+  }
+}
+@keyframes slide-animation {
+  0% {
+    transform: translateX(0rem);
+  }
+  33% {
+    transform: translateX(-110rem);
+  }
+  66% {
+    transform: translateX(10rem);
+  }
+  100% {
+    transform: translateX(-110rem);
+  }
+}
+
+/* Animated Words Flip */
+
+@keyframes text-scroll-up {
+  0% {
+    transform: translateY(0%) scale(1.5);
+  }
+  25% {
+    transform: translateY(-112%);
+  }
+  30% {
+    transform: translateY(-100%);
+  }
+  40% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  70% {
+    transform: translateY(-300%);
+  }
+  80% {
+    transform: translateY(-412%);
+  }
+  90% {
+    transform: translateY(-400%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+@keyframes text-scroll-up-2 {
+  0% {
+    transform: translateY(0%) scale(1.5);
+    color: rgb(255, 50, 250);
+  }
+  25% {
+    transform: translateY(-112%);
+    color: rgb(255, 50, 50);
+  }
+  30% {
+    transform: translateY(-100%);
+    color: rgb(146, 190, 120);
+  }
+  40% {
+    transform: translateY(-212%);
+    color: rgba(12, 255, 174, 0.8);
+  }
+  50% {
+    transform: translateY(-200%);
+    color: rgba(12, 255, 174, 0.8);
+  }
+  60% {
+    transform: translateY(-312%);
+    color: rgba(255, 30, 200, 0.89);
+  }
+  70% {
+    transform: translateY(-300%);
+    color: rgb(10, 80, 200);
+  }
+  80% {
+    transform: translateY(-412%);
+    color: rgb(10, 80, 200);
+  }
+  90% {
+    transform: translateY(-400%);
+    color: rgb(255, 20, 20);
+  }
+  100% {
+    transform: translateY(-400%);
+    color: rgb(255, 20, 20);
+  }
+}
+@keyframes text-scroll-down {
+  0% {
+    transform: translateY(-400%) scale(1.5);
+  }
+  25% {
+    transform: translateY(-388%);
+  }
+  30% {
+    transform: translateY(-288%);
+  }
+  40% {
+    transform: translateY(-300%);
+  }
+  50% {
+    transform: translateY(-188%);
+  }
+  60% {
+    transform: translateY(-200%);
+  }
+  70% {
+    transform: translateY(-88%);
+  }
+  80% {
+    transform: translateY(-100%);
+  }
+  90% {
+    transform: translateY(8%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
