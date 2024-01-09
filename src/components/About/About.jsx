@@ -9,12 +9,14 @@ const About = () => {
   return (
     <section id="about" className="app__about">
       <section className="app__about-selfIntro">
-        <img
+        {/* <img
           className="app__about-trAI"
-          src={images.trAI} alt="ai-logo" />
+          src={images.trAI} alt="ai-logo" /> */}
+        {/* we can show the "Terrence Rosales" as a hover effect */}
         <h2 className="app__about-selfIntro_name">Terrence Rosales</h2>
+        {/* end of full name */}
         <h1 className="app__about-selfIntro_titles">
-          Frontend | <span className="text-red">UI / UX</span> | Software
+          Frontend <span>| </span><span className="custom__text" >UI / UX</span> <span>| </span> Software
           Developer
         </h1>
         <p className="app__about-selfIntro_stmt">

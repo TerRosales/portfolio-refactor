@@ -1,9 +1,9 @@
 .app__about {
-  @apply container flex w-full py-[10%];
+  @apply container flex w-full py-[12%] mx-7;
 }
 
 .app__about-trAI {
-  @apply w-[350px]
+  @apply w-[450px]
 }
 
 .app__about-selfIntro {
@@ -11,16 +11,31 @@
 }
 
 .app__about-selfIntro_name {
+  @apply text-[38px];
 }
 
 .app__about-selfIntro_titles {
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: rgba(73, 241, 171, 0.9);
   text-shadow: -10px 5px 12px rgba(73, 252, 170, 0.25);
   animation: text-pop;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+
+.app__about-selfIntro_titles span {
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-shadow: -10px 5px 12px rgba(73, 252, 140, 0.45);
+  animation: text-pop;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  @apply text-red-500;
+}
+
+.custom__text {
+  @apply text-[50px] text-slate-700;
 }
 
 .app__about-selfIntro_stmt {
@@ -45,7 +60,7 @@
 /* Start Of Animated Sections */
 
 .app__about-skillsAnimations {
-  @apply flex-col;
+  @apply w-1/2 flex-col mx-7 px-10;
 }
 /* Flipping Texts */
 .app__about-animationWordFlip {
@@ -71,7 +86,7 @@
     rgba(2, 2, 2, 0) 98%
   );
   border-image-slice: 1;
-  @apply flex h-[3rem] w-full;
+  @apply flex h-[3rem];
 }
 
 .app__animator-thirdWord,
