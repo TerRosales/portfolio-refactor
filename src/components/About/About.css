@@ -1,9 +1,9 @@
 .app__about {
-  @apply container flex w-full py-[12%] mx-7;
+  @apply container flex w-full pl-[5%] py-[12%] mx-7;
 }
 
 .app__about-trAI {
-  @apply w-[450px]
+  @apply w-[450px];
 }
 
 .app__about-selfIntro {
@@ -60,21 +60,16 @@
 /* Start Of Animated Sections */
 
 .app__about-skillsAnimations {
-  @apply w-1/2 flex-col mx-7 px-10;
+  @apply w-1/2 flex-col mx-1 px-1;
 }
 /* Flipping Texts */
 .app__about-animationWordFlip {
 }
 .app__animator-wrapper {
   display: flex;
-  height: 2.2rem;
   width: 80%;
-  text-align: center;
-  justify-content: center;
-  overflow-y: hidden;
   margin: 4.5rem 3rem 4.5rem 3rem;
   box-shadow: -10px 10px 10px 1px rgba(10, 100, 10, 0.075);
-  width: 24rem;
   border-width: 0px 2.5px 2.5px 2.5px;
   border-style: solid;
   border-image: linear-gradient(
@@ -86,13 +81,13 @@
     rgba(2, 2, 2, 0) 98%
   );
   border-image-slice: 1;
-  @apply flex h-[3rem];
+  @apply flex h-[2.5rem] w-[22rem] flex overflow-hidden  justify-center text-center;
 }
 
 .app__animator-thirdWord,
 .app__animator-firstWord {
   z-index: 1;
-  font-size: 1.65rem;
+  font-size: 1.45rem;
   display: block;
   width: 9.4rem;
   transition: all 0.5s ease-in-out;
@@ -117,7 +112,7 @@
 }
 
 .app__animator-secondWord {
-  font-size: 1.55rem;
+  font-size: 1.35rem;
   z-index: 1;
   display: block;
   width: 5rem;
@@ -127,7 +122,28 @@
   animation-fill-mode: both;
   transform: translateY(400%);
 }
+/* Flipping Text End */
+/* Sliding Text */
+.slick-slider {
+  @apply m-0 p-0;
+}
+
+.slick-track {
+  @apply py-3 h-[120px];
+}
+
+.slick-slide {
+  @apply py-5 mx-1;
+}
+
 .app__about-animationWordSlide {
+  @apply pl-[5%] w-full;
+}
+
+.app__about-carousel-list {
+}
+
+.app__about-carousel-listItem {
 }
 
 @media screen and (max-width: 400px) {

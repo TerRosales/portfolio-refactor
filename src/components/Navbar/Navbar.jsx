@@ -7,19 +7,21 @@ const Navbar = () => {
   return (
     <nav className="app__nav">
       <div className="app__nav-logo">
-        <Link to="/">
+        <Link to="/home">
           <img src={images.logo} alt="logo" />
         </Link>
       </div>
       <section className="app__nav-link_list">
-        <NavLink className="app__nav-link_listItem" to="/#about">
-          About
-        </NavLink>
-        <NavLink className="app__nav-link_listItem" to="/#projects">
-          Projects
-        </NavLink>
-        <NavLink className="app__nav-link_listItem" to="/Form">
-          Form
+        <ul className="app__nav-link_list">
+          <li className="app__nav-link_listItem">
+            <a href="#about">About</a>
+          </li>
+          <li className="app__nav-link_listItem">
+            <a href="#projects">Projects</a>
+          </li>
+        </ul>
+        <NavLink className="app__nav-link_listItem">
+          <a href="/form">Form</a>
         </NavLink>
       </section>
     </nav>

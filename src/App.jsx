@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" />
+        <Route path="/home" />
         <Route path="/form" />
       </Routes>
       <Navbar />
