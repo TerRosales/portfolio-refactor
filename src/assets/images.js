@@ -18,4 +18,67 @@ const images = {
   quizTimeVid,
 };
 
-export default images;
+const skills = {
+  Javascript: {
+    icon: "filler",
+    familiarity: "filler",
+    projects: "",
+  },
+  HTML: {
+    icon: "filler",
+    familiarity: "filler",
+    projects: "",
+  },
+  CSS: {
+    icon: "filler",
+    familiarity: "filler",
+    projects: "",
+  },
+  Astro: {
+    icon: "filler",
+    familiarity: "filler",
+    projects: "",
+  },
+  D3: {
+    icon: "filler",
+    familiarity: "filler",
+    projects: "",
+  },
+  Tailwind: {
+    icon: "filler",
+    familiarity: "filler",
+    projects: "",
+  },
+  SASS: {
+    icon: "filler",
+    familiarity: "filler",
+    projects: "",
+  },
+  React: {
+    icon: "filler",
+    familiarity: "filler",
+    projects: "",
+  },
+  Wordpress: {
+    icon: "filler",
+    familiarity: "filler",
+    projects: "",
+  },
+  Figma: {
+    icon: "filler",
+    familiarity: "filler",
+    projects: "",
+  },
+  Photoshop: {
+    icon: "filler",
+    familiarity: "filler",
+    projects: "",
+  },
+  NPM: {
+    icon: "filler",
+    familiarity: "filler",
+    projects: "",
+  },
+}
+
+export default [images, skills];
