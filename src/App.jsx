@@ -11,7 +11,7 @@ function App() {
     <>
       <Routes>
         <Route path="/home" />
-        <Route path="/form" />
+        <Route path="/form" element={<Form />} />
       </Routes>
       <Navbar />
       <About />

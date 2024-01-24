@@ -20,8 +20,8 @@ const Navbar = () => {
             <a href="#projects">Projects</a>
           </li>
         </ul>
-        <NavLink className="app__nav-link_listItem">
-          <a href="/form">Form</a>
+        <NavLink className="app__nav-link_listItem" to="/form">
+          Form
         </NavLink>
       </section>
     </nav>
