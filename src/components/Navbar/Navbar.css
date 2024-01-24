@@ -18,6 +18,7 @@
 }
 
 .app__nav-logo {
+  @apply w-auto;
 }
 
 .app__nav-link_list {

@@ -1,13 +1,12 @@
 .app__about {
-  @apply container flex w-full pl-[5%] py-[12%] mx-7;
+  @apply container flex flex-col w-full pl-[5%] py-[20%] mx-7;
 }
 
 .app__about-trAI {
-  @apply w-[450px];
 }
 
 .app__about-selfIntro {
-  @apply pl-5 w-1/2  sm:w-full;
+  @apply pl-2 w-full;
 }
 
 .app__about-selfIntro_name {
@@ -60,15 +59,15 @@
 /* Start Of Animated Sections */
 
 .app__about-skillsAnimations {
-  @apply w-1/2 flex-col mx-1 px-1;
+  @apply flex-col mx-1 px-1;
 }
 /* Flipping Texts */
 .app__about-animationWordFlip {
+  @apply w-full;
 }
 .app__animator-wrapper {
   display: flex;
-  width: 80%;
-  margin: 4.5rem 3rem 4.5rem 3rem;
+  width: 100%;
   box-shadow: -10px 10px 10px 1px rgba(10, 100, 10, 0.075);
   border-width: 0px 2.5px 2.5px 2.5px;
   border-style: solid;
@@ -81,15 +80,15 @@
     rgba(2, 2, 2, 0) 98%
   );
   border-image-slice: 1;
-  @apply flex h-[2.5rem] w-[22rem] flex overflow-hidden  justify-center text-center;
+  @apply h-[2.5rem] w-[20rem] my-16 mx-auto flex overflow-hidden  justify-center text-center;
 }
 
 .app__animator-thirdWord,
 .app__animator-firstWord {
   z-index: 1;
-  font-size: 1.45rem;
+  font-size: 1.25rem;
   display: block;
-  width: 9.4rem;
+  width: 8.7rem;
   transition: all 0.5s ease-in-out;
 }
 
@@ -112,10 +111,10 @@
 }
 
 .app__animator-secondWord {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   z-index: 1;
   display: block;
-  width: 5rem;
+  width: 4.2rem;
   transition: all 0.5s ease-in-out;
   animation: text-scroll-down;
   animation-duration: 4.5s;
@@ -123,9 +122,10 @@
   transform: translateY(400%);
 }
 /* Flipping Text End */
+
 /* Sliding Text */
 .slick-slider {
-  @apply m-0 p-0;
+  @apply m-0 p-0 w-full;
 }
 
 .slick-track {
@@ -137,7 +137,7 @@
 }
 
 .app__about-animationWordSlide {
-  @apply pl-[5%] w-full;
+  @apply w-full;
 }
 
 .app__about-carousel-list {

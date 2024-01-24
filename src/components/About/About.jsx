@@ -14,7 +14,7 @@ const About = () => {
           src={images.trAi}
           alt="ai-logo"
         /> */}
-        {/* we can show the "Terrence Rosales" as a hover effect */}
+        {/*can show the "Terrence Rosales" as a hover effect */}
         <h2 className="app__about-selfIntro_name">Terrence Rosales</h2>
         {/* end of full name */}
         <h1 className="app__about-selfIntro_titles">
