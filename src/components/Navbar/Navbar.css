@@ -14,7 +14,7 @@
   );
   border-image-slice: 1;
   box-shadow: -10px 10px 10px 1px rgba(10, 70, 10, 0.075);
-  @apply fixed flex justify-between pt-[1rem] w-11/12  h-[90px] left-7 px-5;
+  @apply fixed flex justify-between pt-[1rem] w-11/12  h-[80px] left-7 px-5;
 }
 
 .app__nav-logo {
