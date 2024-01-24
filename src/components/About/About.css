@@ -80,7 +80,7 @@
     rgba(2, 2, 2, 0) 98%
   );
   border-image-slice: 1;
-  @apply h-[2.5rem] w-[20rem] my-16 mx-auto flex overflow-hidden  justify-center text-center;
+  @apply h-[2.1rem] w-[20rem] my-16 mx-auto flex overflow-hidden  justify-center text-center;
 }
 
 .app__animator-thirdWord,

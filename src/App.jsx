@@ -9,11 +9,11 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <>
-      <Routes>
+      <Navbar />
+            <Routes>
         <Route path="/home" />
         <Route path="/form" element={<Form />} />
       </Routes>
-      <Navbar />
       <About />
       <Projects />
       <Footer />
